@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+div > p{
+    display: none;
+}
+
+div:hover{
+    color: aquamarine;
+    
+
+}
+div:hover >p{
+    display: block;
+    color: black;
+}
+p#css:hover{
+    color: aliceblue;
+
+}

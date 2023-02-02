@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página de Venda</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <h1>Produto à venda</h1>
+    <img src="imagem-do-produto.jpg" alt="Imagem do Produto">
+    <p>Descrição do Produto</p>
+    <p>Preço: $50</p>
+    <button id="comprar-botao" onclick="comprar()">Comprar</button>
+    <script src="script.js"></script>
+  </body>
+</html>
+Copy code
+body {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#comprar-botao {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+Copy code
+function comprar() {
+    alert("Obrigado por comprar!");
+}
