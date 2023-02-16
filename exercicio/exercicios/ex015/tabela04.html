@@ -10,24 +10,32 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 500px;
+            width: 600px;
+            padding: 10px;
+            border-collapse: collapse;
+        }
+        caption{
+            padding:  5px;
+            font-size: 1.5em;
         }
         td, tr, th{
-            border: 1px solid black;
+            border: 1px solid gray;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Ranking de Nomes e gosto de filmes</h1>
     <table>
+        <caption>Filmes Favoritos</caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
             <tr>
-                <th rowspan="5">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -39,10 +47,11 @@
                     <td>Batman</td>
                 </tr>
                 <tr>
-                    <tr>Cláudio Medo</tr>
+                    <td>Cláudio Medo</td>
                     <td>Oblivion</td>
                     <td>Matriz</td>
-                    <td>Heror</td>
+                    <td>Big Heror</td>
+                    
                 </tr>
             
             </tr>
@@ -50,13 +59,34 @@
                 
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
-
+                <th rowspan="4" scope="rowgroup">Homens</th>
+                <tr>
+                    <td>Bruno Mundonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lorenço</td>
+                    <td>Wall-e</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Orochiaziz</td>
+                    <td>Romance</td>
+                    <td>Ficção ciêntifica</td>
+                    <td>Marvel</td>
+                </tr>
             </tr>
         </thead>
         <tbody>
             <tr></tr>
         </tbody>
+        <tfoot>
+           <th colspan="4" scope="row">Total</th>
+           <td>33343432</td>
+        </tfoot>
     </table>
 </body>
 </html>

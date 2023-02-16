@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgb(66, 65, 65);
+    
+}
+
+header{
+    background-color: BLACK;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section p{
+    padding-bottom: 2em     ;
+}
+
+section.normal{
+    background-color: white;
+    color: balck;
+    font-family: 'Srisakdi', cursive;
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 10px;
+    padding: 1em;
+    
+}
+
+section.imagem{
+    background-color: rgb(46, 45, 45);
+    color: white;
+   font-family: 'Srisakdi', cursive;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459);
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
