@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color: rgb(1, 1, 90);
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+        }
+        fieldset{
+            border-color: #fff;
+            color: #fff;
+            font-weight: bold;
+            
+        }
+        .a{
+            border-radius: 5px;
+            padding: .2em;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes com Formulário</h1>
+    <form action="cadastro.js">
+        <fieldset>
+            <legend>Dados Pessoas</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required  class="a">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="text" name="email" id="iemail" required class="a">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" placeholder="+245 000 000 000" required class="a">
+            </p>
+            <p>
+                <input type="submit" value="Enviar" class="a">
+                <input type="reset" value="Limpar" class="a">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

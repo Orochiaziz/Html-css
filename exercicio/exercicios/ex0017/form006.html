@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testes de Formulário</h1>
+    <form action="" method="post">
+        <label for="istados">Estados De Guine-Bissau</label>
+        <p>
+            <select name="estado" id="iestado">
+                <optgroup label="Região Nordeste">
+                    <option value="Gb">Gabú</option>
+                    <option value="Bf">Bafatá</option>
+                    <option value="Or">Orochiaziz</option>
+                </optgroup>
+                <optgroup label="Região Sudoeste">
+                    <option value="Gb">Bissau</option>
+                    <option value="Bf">Cacheu</option>
+                    <option value="Or">Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p><label for="ipprf">Profissão</label>
+            <input type="text" name="Prof" id="iprof" list="ilist">
+            <datalist id="ilist">
+                <option>Porgramação</option>
+                <option>Desenvolvedor</option>
+                <option>Adimistrador</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva a sua mensagem aqui...!"></textarea>
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+</html>
