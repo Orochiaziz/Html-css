@@ -1,3 +1,37 @@
 @charset "URF-8";
 
 /*versao para Todas as demais meedias */
+
+/*Typical Davace Breakpoints
+    Telas pequenas: ate 600px
+    Celular:600px ate 786px
+    Tablet: 786px ate 992px
+    Desktop:992px ate 1200px
+    Grandes Telas: acima de 1200px
+*/
+
+
+@media screen and (min-width: 789px) and (max-width: 992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone{display: none;}
+    #tablet{display: block;}
+    #impre{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 992px) and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+
+    }
+
+    #phone{display: none;}
+#tablet{display: none;}
+#impre{display: none;}
+#pc{display: block;}
+#tv{display: none;}
+}
